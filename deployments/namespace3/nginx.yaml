@@ -5,7 +5,7 @@ kind: Deployment
 metadata:
 
   name: nginx-deployment
-  namespace: namespace2
+  namespace: namespace3
 
 spec:
 
