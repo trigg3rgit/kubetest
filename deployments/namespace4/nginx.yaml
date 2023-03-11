@@ -8,7 +8,11 @@ metadata:
   namespace: namespace4
 
 spec:
-  syncOptions:
+  syncPolicy:
+    managedNamespaceMetadata:
+      annotations:
+        abc: 123 # adding this is informational with SSA; this would be sticking around in any case until we set a new value
+    syncOptions:
       - CreateNamespace=true
   selector:
 
