@@ -8,7 +8,8 @@ metadata:
   namespace: namespace4
 
 spec:
-  syncOptions: CreateNamespace=true
+  syncOptions:
+      - CreateNamespace=true
   selector:
 
     matchLabels:
